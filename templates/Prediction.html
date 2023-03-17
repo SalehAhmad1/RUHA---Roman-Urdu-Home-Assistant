@@ -1,0 +1,60 @@
+<style>
+.container 
+{
+    height: 200px;
+    position: relative;
+    border: 3px solid green;
+}
+
+.center 
+{
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    left: 53%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.button
+{
+    background-color: #b8a5cc;
+    border-radius: 30px;
+    color: rgb(238, 227, 227);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transform: translate(200%, 200%);
+}
+
+a.button 
+{
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+    top: 10%;
+    left: 50%;
+}
+
+</style>
+
+<html>
+<body>
+    <div class="center">
+        <h1>The Prediction is:</h1>
+    </div>
+    <p>
+        <!-- <div class="centerBTN" href="/DetailedResults" >
+        <button class = "button" href="/DetailedResults" role = "button" aria-disabled = "true">{{String}}</button>
+        </div> -->
+        <a href="/DetailedResults" class="button">{{String}}</a>
+    </p>
+
+</body>
+</html>
